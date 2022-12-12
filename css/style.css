@@ -1,0 +1,88 @@
+:root {
+  --primary-color: hsla(285, 88%, 26%, 1);
+  --base-color: 284;
+  --primary-light-color: hsla(var(--base-color), 40%, 83%, 0.5);
+  --text-color: #121214;
+  --icons-color: #9d9999;
+
+  font-size: 62,5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  min-height: 100vh;
+
+
+}
+
+main {  
+  margin: auto;
+}
+
+
+.back-img {
+  background-image: url("/images/Desktop\ -\ 1.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  display: grid;
+  justify-items: end;
+  align-self: center;
+  
+  
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.play svg path,
+.pause svg path,
+.sound-on svg path {
+  fill: var(--primary-color);
+}
+
+.stop svg path,
+.set svg path,
+.sound-off svg path {
+  fill: var(--icons-color);
+}
+
+
+.hide {
+  display: none;
+}
+#timer{
+  font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 16px;
+}
+#controls {
+  background-color: var(--primary-light-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  border-radius: 9999px;
+  width: clamp(10rem, 10rem + 30vw, 22.8rem);
+  height: clamp(8rem, 5rem + 10vh, 10.8rem);
+}
+
+footer {  
+  justify-content: end;
+  align-self: end; 
+  padding: 0 2.5rem 2.5rem 0;
+}
+
